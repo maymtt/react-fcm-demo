@@ -1,16 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { initializeApp } from "firebase/app";
 import { getMessaging, getToken, onMessage } from "firebase/messaging";
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCr5wFGEB_-vbfae60_-wz1hY-fcHaXbMc",
-  authDomain: "jobfinfin-poc-fcm.firebaseapp.com",
-  projectId: "jobfinfin-poc-fcm",
-  storageBucket: "jobfinfin-poc-fcm.appspot.com",
-  messagingSenderId: "567356460200",
-  appId: "1:567356460200:web:8300dd401c29d006efc69d",
-};
+import firebaseConfig from "../firebaseConfig.json";
 
 const VAPID_KEY =
   "BBq6jULttXWKS6N94TqoZSkXG7EWrw1gZ3ggNkvZu-cDh80QWbnFh97loj7MvjKachbYKT_4LfnknLUSaqTqH1o";
